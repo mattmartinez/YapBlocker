@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>YapBlocker</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>YapBlocker</h1>
+        <span id="volume-badge" class="badge">100% volume</span>
+      </header>
+
+      <section class="status-card" aria-label="Detection status">
+        <div class="status-line">
+          <span id="status-dot" class="status-dot"></span>
+          <strong id="status-text">Off</strong>
+        </div>
+        <div class="metrics">
+          <span>Pitch <strong id="pitch-value">—</strong></span>
+          <span>Clarity <strong id="clarity-value">—</strong></span>
+        </div>
+      </section>
+
+      <button id="toggle" type="button">Enable on this YouTube tab</button>
+      <p id="error" class="error" role="alert" hidden></p>
+
+      <label class="threshold-label" for="threshold">
+        Pitch threshold
+        <output id="threshold-value" for="threshold">180 Hz</output>
+      </label>
+      <input id="threshold" type="range" min="140" max="230" step="5" value="180">
+      <div class="range-labels"><span>140 Hz</span><span>230 Hz</span></div>
+
+      <p class="description">Suppresses high pitches: lowers this tab to <strong>25% volume</strong> while a voice above the threshold is speaking.</p>
+      <p class="disclaimer">On-device pitch heuristic. Accuracy varies with voices, music, and overlapping speakers.</p>
+    </main>
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>

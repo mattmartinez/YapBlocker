@@ -1,0 +1,29 @@
+# Readers from Mini LibriSpeech dev-clean-2 with the sex given in LibriSpeech SPEAKERS.TXT.
+# In this set F readers are the high voices (median pitch 172 to 242 Hz) and M readers the low ones (97 to 147 Hz).
+# 7976 is left out: its listed code and its voice disagree (listed M, median pitch about 200 Hz).
+# id sex
+84 F
+174 M
+251 M
+777 M
+1272 M
+1462 F
+1988 F
+1993 F
+2035 F
+2412 F
+2428 M
+2803 M
+3000 M
+3536 F
+3576 F
+3752 M
+5338 F
+5694 M
+5895 F
+6241 M
+6295 M
+6319 F
+7850 F
+8297 M
+8842 F
