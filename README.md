@@ -140,3 +140,7 @@ Measurements on real audio are in [tools/score](tools/score/README.md).
 | `icons/` | The logo in the sizes Chrome asks for. |
 | `tests/` | Unit tests. |
 | `tools/score/` | Scores the detector against real audio. |
+
+## License
+
+MIT. See [LICENSE](LICENSE).
